@@ -1,0 +1,38 @@
+.signed-svg {
+    display: flex;
+    column-gap: 30px;
+}
+
+.signed-svg__item {
+    width: calc((100% - 90px)/4);
+}
+
+.signed-svg__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--third-bgc-color);
+    margin-bottom: 30px;
+@include flex($jc: center);
+    border-radius: 4px;
+}
+
+.signed-svg__title {
+
+    margin-bottom: 10px;
+
+    color: var(--color-h);
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.signed-svg__text {
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

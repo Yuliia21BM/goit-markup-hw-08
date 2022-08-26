@@ -1,0 +1,29 @@
+.logo-list {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-list__linc {
+@include flex($jc: center);
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: fill var(--main-transition);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+    }
+}
+
+.logo-list__icon {
+    fill: var(--icon-colour);
+
+    transition: fill var(--main-transition);
+
+    .logo-list__linc:hover &,
+    .logo-list__linc:focus & {
+        fill: var(--accent);
+    }
+}
