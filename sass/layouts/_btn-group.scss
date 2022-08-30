@@ -3,8 +3,14 @@
 }
 
 .btn-group {
-@include flex($jc: center, $ai:null);
-    column-gap: 8px;
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    @media screen and (min-width: 768px) {
+        @include flex($jc: center, $ai: null)
+    }
 }
 
 .btn-group__btn {

@@ -4,10 +4,22 @@
     padding-bottom: 60px;
 }
 
+.footer__two-section{
+    @media screen  and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+}
+
 .footer-container {
+    @media screen and (min-width: 1200px){
     display: flex;
+}
 }
 
 .footer__unit {
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    }
 }

@@ -1,10 +1,14 @@
 .footer__join {
     margin-top: 12px;
+    text-align: center;
+
+    margin-bottom: 60px;
 }
 
 .join__list {
     display: flex;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .join__text {
