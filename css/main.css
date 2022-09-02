@@ -502,6 +502,12 @@ body {
   height: 40px;
 }
 
+.menu-set.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .menu-set {
   position: fixed;
   top: 0;
@@ -563,11 +569,16 @@ body {
 .menu-set__link-tel {
   font-family: inherit;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent);
   text-decoration: none;
+}
+@media screen and (min-width: 400px) {
+  .menu-set__link-tel {
+    font-size: 34px;
+  }
 }
 
 .menu-set__link-mail {
@@ -1054,6 +1065,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--white-color-text);
+}
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    text-align: left;
+  }
 }
 
 .mailing__form {
