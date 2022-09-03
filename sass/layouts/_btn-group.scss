@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         @include flex($jc: center, $ai: null)
     }
 }

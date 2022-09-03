@@ -5,7 +5,7 @@
 }
 
 .footer__two-section{
-    @media screen  and (min-width: 768px) {
+    @include tablet {
         display: flex;
         justify-content: space-around;
         margin-bottom: 60px;
@@ -13,13 +13,13 @@
 }
 
 .footer-container {
-    @media screen and (min-width: 1200px){
+    @include desktop{
     display: flex;
 }
 }
 
 .footer__unit {
-    @media screen and (min-width: 1200px) {
+    @include desktop {
     margin-right: 70px;
     }
 }

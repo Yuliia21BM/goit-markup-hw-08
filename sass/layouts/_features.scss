@@ -1,6 +1,6 @@
 .signed-svg {
     gap: 30px;
-    @media screen and (min-width: 768px){
+    @include tablet{
         display: flex;
         flex-wrap: wrap;
     }
@@ -9,11 +9,11 @@
 .signed-svg__item {
     width: 100%;
 
-    @media screen and (min-width: 768px){
+    @include tablet{
         width: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 90px) / 4);
     }
 }
@@ -38,7 +38,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         text-align: left;
     }
 }
