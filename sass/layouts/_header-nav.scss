@@ -8,10 +8,14 @@
 }
 
 .header__set{
+    margin-left: 87px;
     display: flex;
     align-items: center;
     @media screen and (max-width: 767px) {
         display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -27,11 +31,6 @@
 .site-nav {
     display: flex;
 }
-
-.header__site-nav {
-    margin-left: 93px;
-}
-
 
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
@@ -69,45 +68,33 @@
     }
 }
 
-.header__auth-nav {
+.header-set__auth-nav{
     margin-left: auto;
-
-    @media screen and (max-width: 1199px) {
-        padding-top: 21px;
-        padding-bottom: 21px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    @media screen and (min-width: 1200px) {
-        // display: flex;
-    }
 }
 
 .auth-nav{
-    // @media screen and (max-width: 1199px) {
-    //     padding-top: 21px;
-    //     padding-bottom: 21px;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     // display: flex;
-    // }
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    @media screen and (min-width: 1200px) {
+        font-weight: normal;
+    }
 }
-
-// .auth-nav__item:not(:last-child) {
-//     @media screen and (min-width: 1200px) {
-//         margin-right: 50px;
-//     }
-// }
 
 .auth-nav__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
+.auth-nav__item:not(:last-child){
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+}
+
 .auth-nav__link {
-@include flex($jc: center);
+    @include flex($jc: center);
 
     color: var(--color-text);
 
@@ -117,8 +104,7 @@
     &:focus {
         color: var(--accent);
     }
-
-    @media screen and (min-height: 1200px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
