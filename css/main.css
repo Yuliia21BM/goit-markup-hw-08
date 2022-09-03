@@ -314,10 +314,15 @@ body {
 .modal-consent__label {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--color-text);
+}
+@media screen and (min-width: 480px) {
+  .modal-consent__label {
+    font-size: 12px;
+  }
 }
 
 .modal-consent__square {
@@ -349,13 +354,19 @@ body {
   position: relative;
   margin-left: 5px;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent);
   border: none;
-  border-bottom: 1px solid var(--accent);
+  -webkit-text-decoration: underline 1px solid var(--accent);
+          text-decoration: underline 1px solid var(--accent);
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .modal-consent__link {
+    font-size: 12px;
+  }
 }
 
 .modal__button {
