@@ -16,8 +16,8 @@
 
     color: var(--white-color-text);
 
-    @mixin desktop { 
-        text-align: left;
+@include desktop { 
+    text-align: left;
     }
 }
 

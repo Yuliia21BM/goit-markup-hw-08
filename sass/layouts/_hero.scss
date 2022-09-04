@@ -8,7 +8,6 @@
         url('../images/hero480img.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
     background-size: cover;
     margin-left: auto;
     max-width: 1600px;
@@ -25,7 +24,7 @@
         @include retina3 {
             background-image: var(--bg-gradient), url('../images/hero480img@3x.jpg');
         }
-    @include tablet {
+@include tablet {
         background-image: var(--bg-gradient), url('../images/hero768img.jpg');
         @include retina1-5{
             background-image: var(--bg-gradient), url('../images/hero768img@1.5x.jpg');
@@ -38,8 +37,10 @@
         }
     }
 
-    @include desktop {
-        background-image: var(--bg-gradient), url('../images/hero1200.jpg');
+@include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: var(--bg-gradient), url('../images/hero1200.jpg');
         @include retina1-5{
             background-image: var(--bg-gradient), url('../images/hero1200img@1.5x.jpg');
         }

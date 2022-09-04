@@ -8,6 +8,14 @@
     letter-spacing: 0.03em;
 
     text-align: center;
+
+@media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+}
+
+@include desktop{
+    text-align: left;
+}
 }
 
 .address__text {

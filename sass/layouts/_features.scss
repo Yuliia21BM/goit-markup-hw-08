@@ -1,9 +1,11 @@
 .signed-svg {
     gap: 30px;
-    @include tablet{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    // @include tablet{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
 }
 
 .signed-svg__item {
