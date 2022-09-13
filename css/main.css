@@ -1016,6 +1016,11 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__two-section {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer-container {
